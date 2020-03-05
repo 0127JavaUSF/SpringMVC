@@ -3,5 +3,20 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<!-- view resolver bean -->
+	<!-- view resolver bean -->
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+
+		<property name="prefix">
+			<value>/Next</value>
+		</property>
+		<property name="suffix">
+			<value>.html</value>
+		</property>
+
+		<!-- return "page" -> "Nextpage.html" -->
+
+	</bean>
+
+
 </beans>
